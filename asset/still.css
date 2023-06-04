@@ -1,0 +1,122 @@
+body{
+  background-color: var(--Dark-Blue);
+  color: white;
+  list-style: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button
+nav{
+  font-family: "Raleway" sans-serif;
+}
+
+.container{
+  width: 95%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.primary-button{
+background: linear-gradient(to right, var(--Blue), var(--Cyan));
+padding:1em 2em;
+border-radius: 9999px;
+color: white;
+}
+
+.primary-button:hover{
+  animation: tada; 
+  animation-duration: 2s; 
+}
+
+
+
+:root{
+ /* - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+### Accent
+
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%)*/
+--Dark-Blue: hsl(218, 28%, 13%);
+--Cyan: hsl(176, 68%, 64%);
+--Blue: hsl(198, 60%, 50%);
+
+
+}
+
+
+/* HEADER */
+
+header{
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+
+nav{
+  display: flex;
+  gap: 36px;
+}
+
+/* HERO*/
+
+#hero{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  max-width: 55ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero .hero-image{
+  display: flex;
+  justify-content: center;
+}
+
+#hero h1{
+  font-size: 1.5em;
+  margin-top: 0.8em;
+  margin-bottom: 1.7em;
+}
+
+#hero p{
+  margin-bottom: 0.7em;
+}
+
+/*Features*/
+
+#features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em;
+  margin-top: 4em;
+}
+
+#features .features-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  min-width: 310px;
+}
+.features .features-card .features-card-image {
+  max-width: 10px;
+}
+
